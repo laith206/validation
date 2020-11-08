@@ -1,0 +1,11 @@
+.containe {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+}
+
+body {
+    background-color: rgba(175, 206, 247, 0.5);
+    font-family: 'segoe ui light';
+}

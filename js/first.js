@@ -1,0 +1,147 @@
+< html >
+
+    <
+    head >
+    <
+    link rel = "stylesheet"
+href = "css/bootstrap.min.css" >
+    <
+    link rel = "stylesheet"
+href = "css/style.css" >
+    <
+    link rel = "stylesheet"
+href = "css/all.min.css" >
+    <
+    /head>
+
+<
+body >
+
+    <
+    div class = "containe py-5" >
+    <
+    div id = "alertttt" >
+    <
+    /div> <
+    h5 > Bookmarker < /h5> <
+    div class = "form-groub" >
+    <
+    label > UserName: < /label> <
+    input class = "form-control "
+value = "Aaa"
+type = "text"
+id = "UserName" >
+    <
+    label
+for = ""
+id = "ConfPassword-lb" > < /label> <
+    /div> <
+    div class = "form-groub my-2" >
+    <
+    label > Email: < /label> <
+    input class = "form-control "
+value = "Adsdsd@dfdfd.com"
+type = "text"
+id = "Email" >
+    <
+    label
+for = ""
+id = "Email-lab" > < /label> <
+    /div> <
+    div class = "form-groub my-2" >
+    <
+    label > Password: < /label> <
+    input type = "password"
+class = "form-control "
+value = "Aaa123$%%^$"
+id = "Password" >
+    <
+    label
+for = ""
+id = "Password-lab" > < /label> <
+    /div> <
+    div class = "form-groub my-2" >
+    <
+    label > Confirm Password: < /label> <
+    input type = "password"
+class = "form-control "
+id = "ConfPassword" >
+    <
+    label
+for = ""
+class = " text-danger"
+id = "ConfPassword-lab" > < /label>
+
+<
+/div> <
+button onclick = "objectss()"
+class = "btn btn-primary my-3 text-light" > < h5 > Sign in < /h5></button >
+    <!--  <button onclick="upd()" class="btn btn-info my-3">Add Site</button>   -->
+    <
+    /div>
+
+<
+script >
+    <
+    /script>
+
+
+
+
+<
+div id = "lightbox-container" >
+
+    <
+    div id = "lightbox-item" >
+
+    <
+    i id = "prev"
+class = "far m-2 fa-arrow-alt-circle-left  " > < /i> <
+    i id = "close"
+class = "far fa-times-circle " > < /i> <
+    i id = "next"
+class = "far m-2 fa-arrow-alt-circle-right  " > < /i>
+
+<
+/div>
+
+<
+/div>
+
+
+
+
+
+
+
+
+<
+script src = "js/first.js" > < /script> <
+    /body>
+
+<
+/html>
+
+}
+
+}
+
+// ConfPassword valdaishinConfPassword
+ConfPassword.addEventListener("keyup", function() {
+    valdaishinConfPassword(ConfPassword.value)
+
+})
+var ConfPasswordlable = document.getElementById('ConfPassword-lab')
+
+function valdaishinConfPassword(prodname) {
+    let regex = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?([@|\.|#|\$|\^|&|\*|~|%]{3,})).{6,})\S$/;
+    if (prodname !== Password.value) {
+
+        ConfPasswordlable.innerHTML = "Passwords do not match";
+
+    } else {
+        ConfPassword.classList.add("is-valid")
+        ConfPasswordlable.innerHTML = "";
+    }
+
+}
